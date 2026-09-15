@@ -20,30 +20,24 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      var data = {
-        name: document.getElementById('name').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        message: document.getElementById('message').value.trim()
-      };
+      var data = new FormData(form);
+      data.append('_subject', 'Новая заявка с Italiano Facile');
 
-      var formspreeUrl = 'https://formspree.io/f/xxxxxxxx';
-
-      fetch(formspreeUrl, {
+      fetch('https://formsubmit.co/ajax/PolPolDav@yandex.ru', {
         method: 'POST',
-        body: JSON.stringify(data),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+        body: data
       })
       .then(function (r) { return r.json(); })
       .then(function (res) {
-        if (res.ok) {
+        if (res.success) {
           form.style.display = 'none';
           success.style.display = 'block';
         } else {
-          alert('Ошибка при отправке. Попробуйте позже или напишите мне напрямую.');
+          alert('Ошибка. Напишите мне напрямую: PolPolDav@yandex.ru');
         }
       })
       .catch(function () {
-        alert('Ошибка соединения. Попробуйте позже или напишите мне напрямую.');
+        alert('Ошибка соединения. Напишите мне напрямую: PolPolDav@yandex.ru');
       });
     });
   }

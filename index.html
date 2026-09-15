@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Репетитор итальянского языка — онлайн-уроки для начинающих. 500 ₽/час.">
+  <title>Italiano Facile — Репетитор итальянского языка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-badge">IF</div>
+      <span class="logo-text"><em>Italiano</em> Facile</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Меню">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#hero">Главная</a>
+      <a href="#about">Обо мне</a>
+      <a href="#lessons">Как проходят уроки</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+    <div>
+      <div class="hero-badge">Insegnante d'italiano</div>
+      <h1>Итальянский язык <em>доступно и с душой</em></h1>
+      <p class="lead">Индивидуальные онлайн-уроки для начинающих. Первый пробный — бесплатно.</p>
+      <a href="#contacts" class="btn btn-primary">Записаться на пробный</a>
+    </div>
+    <div class="hero-flag" style="text-align:center">🇮🇹</div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="avatar">👩‍🏫</div>
+    </div>
+    <div>
+      <h2 style="font-size:1.8rem;margin-bottom:10px">Привет! Меня зовут Полина</h2>
+      <p style="margin-bottom:16px">Я изучаю итальянский язык и сейчас делаю первые шаги в преподавании. Очень хочу делиться тем, что уже знаю и люблю, и помогать другим открывать для себя этот прекрасный язык.</p>
+      <ul class="info-list">
+        <li><span class="tick">✓</span> Учу итальянский язык, влюблена в Италию</li>
+        <li><span class="tick">✓</span> Начинающий репетитор — подберём темп и программу вместе</li>
+        <li><span class="tick">✓</span> Готовлюсь к каждому занятию, чтобы было полезно и интересно</li>
+        <li><span class="tick">✓</span> Первый пробный урок — бесплатно и без обязательств</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How lessons go ===== -->
+<section class="section section-alt" id="lessons">
+  <div class="container">
+    <h2 class="section-title">Как проходят занятия</h2>
+    <p class="section-sub">Всё просто, понятно и без стресса. Индивидуально под ваш ритм жизни.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>Знакомство</h3>
+        <p>Бесплатный 20-минутный звонок: узнаём цели, уровень, выбираем формат.</p>
+      </div>
+      <div class="step">
+        <h3>План обучения</h3>
+        <p>Составляю персональную программу под ваш запрос — темп, темы, интенсивность.</p>
+      </div>
+      <div class="step">
+        <h3>Регулярные уроки</h3>
+        <p>Занятия онлайн в Zoom или Skype. Все материалы остаются у вас.</p>
+      </div>
+      <div class="step">
+        <h3>Разговорная практика</h3>
+        <p>С первых уроков говорим, слушаем, смотрим видео — и вы замечаете прогресс.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Price ===== -->
+<section class="section" style="text-align:center">
+  <div class="container">
+    <h2 class="section-title">Стоимость</h2>
+    <div style="display:inline-block;background:var(--white);border-radius:var(--radius);padding:32px 48px;box-shadow:var(--shadow);margin:10px auto">
+      <div style="font-size:3rem;font-weight:800;color:var(--terracotta)">500 ₽</div>
+      <div style="color:var(--ink-soft);font-size:1.1rem">за индивидуальный урок 60 минут</div>
+    </div>
+    <div style="margin-top:16px;color:var(--ink-soft)">
+      Первый пробный урок — бесплатно
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contacts ===== -->
+<section class="section section-alt" id="contacts">
+  <div class="container">
+    <h2 class="section-title">Запись на пробный урок</h2>
+    <p class="section-sub">Заполните форму, и я свяжусь с вами в ближайшее время.</p>
+
+    <div class="form-card">
+      <form id="trial-form">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Пожелания (необязательно)</label>
+          <textarea id="message" name="message" placeholder="Например: готовлюсь к поездке, учу для себя, для работы…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Отправить</button>
+        <div class="form-note" style="text-align:center;margin-top:10px">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</div>
+      </form>
+      <div class="form-success" id="form-success">✓ Спасибо! Я свяжусь с вами.</div>
+    </div>
+
+    <div class="contact-grid" style="margin-top:30px">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>Email</h3>
+        <a href="mailto:PolPolDav@yandex.ru">PolPolDav@yandex.ru</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📱</div>
+        <h3>Telegram</h3>
+        <a href="https://t.me/poloptw">@poloptw</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span><strong>Italiano Facile</strong> &mdash; репетитор итальянского языка</span>
+    <span class="footer-note">© 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
